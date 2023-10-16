@@ -9,6 +9,7 @@
 :root{
     --bg-blue: #0084FD;
     --bg-l-blue: #B5DDFF;
+    --bg-violet: #9792E4;
     --text-white: white;
 }
 /* Common */
@@ -16,9 +17,14 @@
     max-width: 1140px;
     margin: 0 auto;
 }
-.flex-center{
+.flex-between{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .flex-wrap{
@@ -70,5 +76,30 @@ main .info .box.large{
     main .info .box,
     main .info .box.large{
         width: 100%;
+    }
+}
+main .planning{
+    background-color: var(--bg-violet);
+    padding: 130px 0 64px 0;
+}
+main .planning .container{
+    gap: 65px;
+
+}
+main .planning .box{
+    width: calc((100% - 65px) / 2);
+}
+@media screen and (max-width: 768px){
+    main .planning .container{
+        flex-direction: column;
+        gap: 35px;
+    }
+    main .planning .box{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px){
+    main .planning{
+        padding: 64px;
     }
 }
