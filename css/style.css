@@ -10,6 +10,7 @@
     --bg-blue: #0084FD;
     --bg-l-blue: #B5DDFF;
     --bg-violet: #9792E4;
+    --bg-white: white;
     --text-white: white;
 }
 /* Common */
@@ -104,8 +105,9 @@ main .planning .box{
     }
 }
 main .expert{
-    padding: 65px 0 112px;
-    text-align: center
+    margin-top: 65px;
+    text-align: center;
+    margin-bottom: 112px;
 }
 main .expert .box{
     background-color: var(--bg-violet);
@@ -117,5 +119,31 @@ main .expert .box:first-of-type{
 @media screen and (max-width: 768px){
     main .container{
         padding: 0 32px;
+    }
+}
+main .benefits{
+    background-color: var(--bg-violet);
+    padding: 77px 0 64px;
+}
+main .benefits h2{
+    text-align: center;
+    color: var(--text-white);
+}
+main .benefits .container{
+    margin-top: 77px;
+    gap: 32px;
+}
+main .benefits .box{
+    background-color: var(--bg-white);
+    width: calc((100% - 64px) / 3);
+}
+@media screen and (max-width: 768px){
+    main .benefits .box{
+        width: calc((100% - 32px) / 2);
+    }
+}
+@media screen and (max-width: 576px){
+    main .benefits .box{
+        width: 100%;
     }
 }
