@@ -172,3 +172,11 @@ main .about .box{
         margin-bottom: 80px;
     }
 }
+main .started{
+    text-align: center;
+    background-color: var(--bg-violet);
+    color: var(--text-white);
+}
+main .started{
+    padding: 65px 0;
+}
