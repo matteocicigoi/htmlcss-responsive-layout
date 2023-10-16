@@ -147,3 +147,28 @@ main .benefits .box{
         width: 100%;
     }
 }
+main .about{
+    margin-top: 96px;
+    margin-bottom: 155px;
+    gap: 32px
+}
+main .about .box.large{
+    width: calc(((100% - 64px) / 3) * 2 + 32px);
+}
+main .about .box{
+    width: calc((100% - 64px) / 3);
+}
+@media screen and (max-width: 768px){
+    main .container{
+        padding: 0 32px;
+    }
+}
+@media screen and (max-width: 576px){
+    main .about .box,
+    main .about .box.large{
+        width: 100%;
+    }
+    main .about{
+        margin-bottom: 80px;
+    }
+}

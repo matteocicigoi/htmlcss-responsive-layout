@@ -16,3 +16,7 @@ main .expert .box{
 main .benefits .box{
     height: 417px;
 }
+main .about .box{
+    height: 632px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
