@@ -10,6 +10,7 @@
     --bg-blue: #0084FD;
     --bg-l-blue: #B5DDFF;
     --bg-violet: #9792E4;
+    --bg-d-grey: #333333;
     --bg-white: white;
     --text-white: white;
 }
@@ -42,12 +43,6 @@ header .box.menu-mobile{
     display: none;
 }
 @media screen and (max-width: 768px){
-    header .container{
-        padding: 0 32px;
-    }
-    main .container{
-        padding: 0 32px;
-    }
     header .box.menu{
         display: none;
     }
@@ -68,12 +63,6 @@ main .info .box.large{
     width: calc(((100% - 48px) / 3) * 2 + 24px);
 }
 @media screen and (max-width: 576px){
-    main .container{
-        padding: 0 32px;
-    }
-    main .info{
-        flex-direction: column;
-    }
     main .info .box,
     main .info .box.large{
         width: 100%;
@@ -92,7 +81,6 @@ main .planning .box{
 }
 @media screen and (max-width: 768px){
     main .planning .container{
-        flex-direction: column;
         gap: 35px;
     }
     main .planning .box{
@@ -115,11 +103,6 @@ main .expert .box{
 }
 main .expert .box:first-of-type{
     margin-top: 52px;
-}
-@media screen and (max-width: 768px){
-    main .container{
-        padding: 0 32px;
-    }
 }
 main .benefits{
     background-color: var(--bg-violet);
@@ -158,11 +141,6 @@ main .about .box.large{
 main .about .box{
     width: calc((100% - 64px) / 3);
 }
-@media screen and (max-width: 768px){
-    main .container{
-        padding: 0 32px;
-    }
-}
 @media screen and (max-width: 576px){
     main .about .box,
     main .about .box.large{
@@ -176,7 +154,18 @@ main .started{
     text-align: center;
     background-color: var(--bg-violet);
     color: var(--text-white);
-}
-main .started{
     padding: 65px 0;
+}
+/* Footer */
+footer{
+    text-align: center;
+    background-color: var(--bg-d-grey);
+    color: var(--text-white);
+    padding: 42px 0;
+}
+@media screen and (max-width: 768px){
+    .container{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
 }
