@@ -103,3 +103,14 @@ main .planning .box{
         padding: 64px;
     }
 }
+main .expert{
+    padding: 65px 0 112px;
+    text-align: center
+}
+main .expert .box{
+    background-color: var(--bg-violet);
+    margin-top: 32px;
+}
+main .expert .box:first-of-type{
+    margin-top: 52px;
+}
