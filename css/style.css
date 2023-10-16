@@ -100,7 +100,7 @@ main .planning .box{
 }
 @media screen and (max-width: 576px){
     main .planning{
-        padding: 64px;
+        padding: 64px 0;
     }
 }
 main .expert{
@@ -113,4 +113,9 @@ main .expert .box{
 }
 main .expert .box:first-of-type{
     margin-top: 52px;
+}
+@media screen and (max-width: 768px){
+    main .container{
+        padding: 0 32px;
+    }
 }
