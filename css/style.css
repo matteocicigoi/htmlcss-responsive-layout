@@ -8,6 +8,7 @@
 /* Variabili */
 :root{
     --bg-blue: #0084FD;
+    --bg-l-blue: #B5DDFF;
     --text-white: white;
 }
 /* Common */
@@ -20,11 +21,15 @@
     justify-content: space-between;
     align-items: center;
 }
+.flex-wrap{
+    flex-wrap: wrap;
+}
 /* Header */
 header{
     background-color: var(--bg-blue);
     color: var(--text-white);
     padding: 15px 0;
+    margin-bottom: 50px;
 }
 header .box.menu-mobile{
     display: none;
@@ -33,10 +38,37 @@ header .box.menu-mobile{
     header .container{
         padding: 0 32px;
     }
+    main .container{
+        padding: 0 32px;
+    }
     header .box.menu{
         display: none;
     }
     header .box.menu-mobile{
         display: block;
+    }
+}
+/* Main */
+main .info{
+    gap: 24px;
+    margin-bottom: 80px;
+}
+main .info .box{
+    width: calc((100% - 48px) / 3);
+    background-color: var(--bg-l-blue);
+}
+main .info .box.large{
+    width: calc(((100% - 48px) / 3) * 2 + 24px);
+}
+@media screen and (max-width: 576px){
+    main .container{
+        padding: 0 32px;
+    }
+    main .info{
+        flex-direction: column;
+    }
+    main .info .box,
+    main .info .box.large{
+        width: 100%;
     }
 }
