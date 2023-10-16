@@ -1,0 +1,42 @@
+@import 'debug.css';
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Variabili */
+:root{
+    --bg-blue: #0084FD;
+    --text-white: white;
+}
+/* Common */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.flex-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Header */
+header{
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+    padding: 15px 0;
+}
+header .box.menu-mobile{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    header .container{
+        padding: 0 32px;
+    }
+    header .box.menu{
+        display: none;
+    }
+    header .box.menu-mobile{
+        display: block;
+    }
+}
