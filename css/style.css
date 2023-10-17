@@ -288,13 +288,51 @@ main .benefits .box{
 main .about{
     margin-top: 96px;
     margin-bottom: 155px;
-    gap: 32px
+    gap: 32px;
+    color: var(--text-violet);
+    align-items: flex-start;
+}
+main .about h2{
+    font-size: 72px;
+    color: var(--text-violet);
+    margin-bottom: -15px;
+}
+main .about .box.large p{
+    font-size: 20px;
+    color: var(--text-black);
+}
+main .about .box p{
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+main .about .box img{
+    width: 100%;
+    border-radius: 50%;
 }
 main .about .box.large{
     width: calc(((100% - 64px) / 3) * 2 + 32px);
+    padding-left: 48px;
 }
 main .about .box{
     width: calc((100% - 64px) / 3);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+main .about .box:last-of-type{
+    padding: 0 0 0 65px;
+    font-weight: bold;
+}
+main .about .box button{
+    margin-top: 30px;
+    font-weight: normal;
+}
+main .about .box .absolute{
+    font-size: 72px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 main .started{
     text-align: center;
@@ -341,6 +379,16 @@ footer{
     main .benefits .box{
         width: calc((100% - 32px) / 2);
     }
+    main .about .box.large{
+        padding: 0 32px 0 65px;
+        width: calc(((100% - 32px) / 2) * 1.1);
+        font-weight: bold;
+    }
+    main .about .box:last-of-type{
+        padding: 0 32px 0 65px;
+        width: calc(((100% - 32px) / 2) * 0.9);
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 768px){
     main .planning{
@@ -350,9 +398,9 @@ footer{
     main .info .box.large,
     main .info .small-box:last-of-type,
     main .expert .box,
-    main .about .box,
+    main .benefits .box,
     main .about .box.large,
-    main .benefits .box{
+    main .about .box:last-of-type{
         width: 100%;
     }
     main .expert .box{
@@ -366,5 +414,17 @@ footer{
     }
     main .about{
         margin-bottom: 80px;
+    }
+    main .about .box.large,
+    main .about .box:last-of-type{
+        padding: 0;
+    }
+    main .about .box img{
+        margin-top: 24px;
+        width: 50%;
+    }
+    main .about .box .absolute{
+        left: 50%;
+        margin-left: -65px;
     }
 }
