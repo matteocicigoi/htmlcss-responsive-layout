@@ -42,14 +42,6 @@ header{
 header .box.menu-mobile{
     display: none;
 }
-@media screen and (max-width: 768px){
-    header .box.menu{
-        display: none;
-    }
-    header .box.menu-mobile{
-        display: block;
-    }
-}
 /* Main */
 main .info{
     gap: 24px;
@@ -62,12 +54,6 @@ main .info .box{
 main .info .box.large{
     width: calc(((100% - 48px) / 3) * 2 + 24px);
 }
-@media screen and (max-width: 576px){
-    main .info .box,
-    main .info .box.large{
-        width: 100%;
-    }
-}
 main .planning{
     background-color: var(--bg-violet);
     padding: 130px 0 64px 0;
@@ -78,19 +64,6 @@ main .planning .container{
 }
 main .planning .box{
     width: calc((100% - 65px) / 2);
-}
-@media screen and (max-width: 768px){
-    main .planning .container{
-        gap: 35px;
-    }
-    main .planning .box{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 576px){
-    main .planning{
-        padding: 64px 0;
-    }
 }
 main .expert{
     margin-top: 65px;
@@ -120,16 +93,6 @@ main .benefits .box{
     background-color: var(--bg-white);
     width: calc((100% - 64px) / 3);
 }
-@media screen and (max-width: 768px){
-    main .benefits .box{
-        width: calc((100% - 32px) / 2);
-    }
-}
-@media screen and (max-width: 576px){
-    main .benefits .box{
-        width: 100%;
-    }
-}
 main .about{
     margin-top: 96px;
     margin-bottom: 155px;
@@ -140,15 +103,6 @@ main .about .box.large{
 }
 main .about .box{
     width: calc((100% - 64px) / 3);
-}
-@media screen and (max-width: 576px){
-    main .about .box,
-    main .about .box.large{
-        width: 100%;
-    }
-    main .about{
-        margin-bottom: 80px;
-    }
 }
 main .started{
     text-align: center;
@@ -163,9 +117,40 @@ footer{
     color: var(--text-white);
     padding: 42px 0;
 }
+/* Responsive */
 @media screen and (max-width: 768px){
+    header .box.menu{
+        display: none;
+    }
+    header .box.menu-mobile{
+        display: block;
+    }
+    main .planning{
+        padding: 64px 0;
+    }
+    main .info .box,
+    main .info .box.large,
+    main .about .box,
+    main .about .box.large,
+    main .benefits .box{
+        width: 100%;
+    }
+    main .about{
+        margin-bottom: 80px;
+    }
+}
+@media screen and (max-width: 992px){
     .container{
         padding-left: 32px;
         padding-right: 32px;
+    }
+    main .planning .container{
+        gap: 35px;
+    }
+    main .planning .box{
+        width: 100%;
+    }
+    main .benefits .box{
+        width: calc((100% - 32px) / 2);
     }
 }
