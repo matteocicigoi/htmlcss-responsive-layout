@@ -13,6 +13,7 @@
     --bg-d-grey: #333333;
     --bg-white: white;
     --text-white: white;
+    --text-black: black;
 }
 /* Common */
 .container{
@@ -32,6 +33,26 @@
 .flex-wrap{
     flex-wrap: wrap;
 }
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    all: unset;
+    background-color: var(--bg-white);
+    padding: 9px 15px;
+    color: var(--text-black);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+/* Typography */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
 /* Header */
 header{
     background-color: var(--bg-blue);
@@ -42,6 +63,17 @@ header{
 header .box.menu-mobile{
     display: none;
 }
+header .box ul{
+    list-style-type: none;
+}
+header .box li{
+    display: inline;
+    padding-left: 30px;
+}
+header .box.menu-mobile i{
+    font-size: 18px;
+}
+
 /* Main */
 main .info{
     gap: 24px;
@@ -118,28 +150,13 @@ footer{
     padding: 42px 0;
 }
 /* Responsive */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     header .box.menu{
         display: none;
     }
     header .box.menu-mobile{
         display: block;
     }
-    main .planning{
-        padding: 64px 0;
-    }
-    main .info .box,
-    main .info .box.large,
-    main .about .box,
-    main .about .box.large,
-    main .benefits .box{
-        width: 100%;
-    }
-    main .about{
-        margin-bottom: 80px;
-    }
-}
-@media screen and (max-width: 992px){
     .container{
         padding-left: 32px;
         padding-right: 32px;
@@ -152,5 +169,20 @@ footer{
     }
     main .benefits .box{
         width: calc((100% - 32px) / 2);
+    }
+}
+@media screen and (max-width: 768px){
+    main .planning{
+        padding: 64px 0;
+    }
+    main .info .box,
+    main .info .box.large,
+    main .about .box,
+    main .about .box.large,
+    main .benefits .box{
+        width: 100%;
+    }
+    main .about{
+        margin-bottom: 80px;
     }
 }
