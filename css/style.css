@@ -17,6 +17,7 @@
     --text-d-grey: #5A6E7F;
     --text-blue: var(--bg-blue);
     --text-violet: var(--bg-violet);
+    --text-grey: #818181;
 }
 /* Common */
 .container{
@@ -65,6 +66,10 @@ button{
 }
 .btn-large{
     padding: 9px 48px;
+}
+.btn-violet{
+    background-color: var(--bg-violet);
+    color: var(--text-white);
 }
 .r-20{
     border-radius: 20px;
@@ -254,6 +259,22 @@ main .benefits{
 main .benefits h2{
     text-align: center;
     color: var(--text-white);
+    font-size: 48px;
+}
+main .benefits .box h3{
+    font-size: 72px;
+    margin-bottom: 15px;
+    color: var(--text-violet);
+}
+main .benefits .box h4{
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--text-violet);
+}
+main .benefits .box p{
+    color: var(--text-grey);
+    line-height: 30px;
+    margin-bottom: 30px;
 }
 main .benefits .container{
     margin-top: 77px;
@@ -262,6 +283,7 @@ main .benefits .container{
 main .benefits .box{
     background-color: var(--bg-white);
     width: calc((100% - 64px) / 3);
+    padding: 32px;
 }
 main .about{
     margin-top: 96px;
