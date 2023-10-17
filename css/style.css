@@ -57,11 +57,22 @@ button{
     background-color: var(--bg-blue);
     color: var(--text-white);
 }
+.btn-small{
+    background-color: var(--bg-violet);
+    color: var(--text-black);
+    padding: 10px 20px;
+}
 .btn-large{
     padding: 9px 48px;
 }
 .r-20{
     border-radius: 20px;
+}
+.r-40{
+    border-radius: 40px;
+}
+.r-50{
+    border-radius: 50%;
 }
 /* Typography */
 body{
@@ -146,10 +157,46 @@ main .planning{
 }
 main .planning .container{
     gap: 65px;
+    padding: 0 135px;
+    align-items: flex-end;
 
 }
 main .planning .box{
     width: calc((100% - 65px) / 2);
+    line-height: 30px;
+}
+main .planning .box img{
+    width: 100%;
+}
+main .planning .box:last-of-type img{
+    padding: 0 55px;
+}
+main .planning .box:last-of-type{
+    text-align: center;
+    padding: 32px 40px;
+    background-color: var(--bg-white);
+}
+main .planning .box:first-of-type h2{
+    color: var(--text-white);
+    font-size: 34px;
+    margin-top: 130px;
+    margin-bottom: 50px;
+}
+main .planning .box:last-of-type h2{
+    color: var(--text-black);
+    font-size: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+main .planning .box:first-of-type p{
+    color: var(--text-white);
+    font-size: 16px;
+}
+main .planning .box:last-of-type p{
+    color: var(--text-black);
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-style: italic;
 }
 main .expert{
     margin-top: 65px;
@@ -211,7 +258,8 @@ footer{
     header .box.menu-mobile{
         display: block;
     }
-    .container{
+    .container,
+    main .planning .container{
         padding-left: 32px;
         padding-right: 32px;
     }
