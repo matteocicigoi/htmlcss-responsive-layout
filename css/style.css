@@ -18,6 +18,7 @@
     --text-blue: var(--bg-blue);
     --text-violet: var(--bg-violet);
     --text-grey: #818181;
+    --text-orange: #FDC15F;
 }
 /* Common */
 .container{
@@ -70,6 +71,13 @@ button{
 .btn-violet{
     background-color: var(--bg-violet);
     color: var(--text-white);
+}
+.btn-x-large{
+    background-color: var(--bg-white);
+    color: var(--text-violet);
+    padding: 25px 84px;
+    font-weight: bold;
+    font-size: 18px;
 }
 .r-20{
     border-radius: 20px;
@@ -339,6 +347,31 @@ main .started{
     background-color: var(--bg-violet);
     color: var(--text-white);
     padding: 65px 0;
+}
+main .started span,
+main .started p,
+main .started h4
+{
+    font-size: 18px;
+    line-height: 30px;
+}
+main .started h3{
+    font-size: 48px;
+    margin-top: 10px;
+}
+main .started h2{
+    margin: 25px 0;
+    font-size: 96px;
+    color: var(--text-orange);
+}
+main .started h4{
+    font-weight: normal;
+}
+main .started button{
+    margin: 32px 0;
+}
+main .started a{
+    text-decoration: underline;
 }
 /* Footer */
 footer{
