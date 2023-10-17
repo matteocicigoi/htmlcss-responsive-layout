@@ -14,6 +14,8 @@
     --bg-white: white;
     --text-white: white;
     --text-black: black;
+    --text-d-grey: #5A6E7F;
+    --text-blue: var(--bg-blue);
 }
 /* Common */
 .container{
@@ -24,6 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.flex{
+    display: flex;
 }
 .flex-center{
     display: flex;
@@ -45,9 +50,18 @@ button{
     background-color: var(--bg-white);
     padding: 9px 15px;
     color: var(--text-black);
-    border-radius: 20px;
     cursor: pointer;
 
+}
+.btn-secondary{
+    background-color: var(--bg-blue);
+    color: var(--text-white);
+}
+.btn-large{
+    padding: 9px 48px;
+}
+.r-20{
+    border-radius: 20px;
 }
 /* Typography */
 body{
@@ -78,13 +92,53 @@ header .box.menu-mobile i{
 main .info{
     gap: 24px;
     margin-bottom: 80px;
+    align-items: stretch;
 }
 main .info .box{
     width: calc((100% - 48px) / 3);
     background-color: var(--bg-l-blue);
+    text-align: center;
+    padding: 32px 24px;
 }
 main .info .box.large{
     width: calc(((100% - 48px) / 3) * 2 + 24px);
+    text-align: left;
+    padding: 0;
+}
+main .info h2{
+    font-size: 24px;
+    color: var(--text-blue);
+    margin-bottom: 30px;
+}
+main .info p,
+main .info button{
+    font-size: 18px;
+    font-weight: bold;
+}
+main .info .box > i{
+    color: var(--text-blue);
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+main .info p{
+    color: var(--text-d-grey);
+}
+main .info .small-box p{
+    margin-bottom: 35px;
+}
+main .info img{
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+main .info .small-box{
+    width: 50%;
+}
+main .info .small-box:first-of-type{
+    padding: 32px 0 32px 24px;
+}
+main .info .small-box:last-of-type{
+    align-self: flex-end;
 }
 main .planning{
     background-color: var(--bg-violet);
@@ -161,9 +215,19 @@ footer{
         padding-left: 32px;
         padding-right: 32px;
     }
+    main .info .box{
+        display: block;
+    }
+    main .info .small-box:first-of-type{
+        padding: 32px 24px;
+    }
+    main .info .small-box:last-of-type{
+        width: 65%;
+    }
     main .planning .container{
         gap: 35px;
     }
+    main .info .small-box:first-of-type,
     main .planning .box{
         width: 100%;
     }
@@ -177,6 +241,7 @@ footer{
     }
     main .info .box,
     main .info .box.large,
+    main .info .small-box:last-of-type,
     main .about .box,
     main .about .box.large,
     main .benefits .box{
